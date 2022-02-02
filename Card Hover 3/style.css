@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 49, 80);
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 5px;
+    position: relative;
+}
+
+.marks{
+    position: absolute;
+    background-color: turquoise;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.link{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    width:100%;
+    height:100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:0px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.card:hover .link{
+    width:100%;
+    color: rgba(0, 0, 0, 1);
+}
+
+.card:hover .marks{
+    color: rgba(0, 0, 0, 0);
+}
