@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 9, 49);
+    font-family: 'Prompt', sans-serif;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:50px;
+    margin: 10px;
+    border: solid 1px white;
+    border-radius: 30px;
+    transition:0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+a:active{   
+    width:180px;
+    height:40px;
+}
+
+a:hover{
+    border: none;
+}
+
+#btn1:hover{
+    background-image: linear-gradient(to right,rgb(255, 94, 215),rgb(28, 222, 236));
+}
+
+#btn2:hover{
+    background-image: linear-gradient(to right,rgb(19, 252, 11),rgb(255, 251, 17));
+}
+
+#btn3:hover{
+    background-image: linear-gradient(to right,rgb(255, 65, 65),rgb(255, 152, 111));
+}
